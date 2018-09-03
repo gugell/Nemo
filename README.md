@@ -7,7 +7,7 @@ Nemo is an opinionated iOS programmatically navigation management helper.
 ## Motivation
 
 * Avoid boilerplate code when handle navigation programmatically.
-* Reduce setup for navgiation between controllers, embrace convention
+* Reduce setup for navgiation between controllers, embrace convention.
 
 ## Showcase
 
@@ -70,6 +70,56 @@ These scenearios generates the following outcomes:
 
 Add all the files inside the [Common/Nemo](https://github.com/LuisBurgos/Nemo/tree/master/Nemo/Common/Nemo) folder
 
+### 2. Add your screens
+
+**IMPORTANT:**
+
+`Screen` class provides two ways to declarate a screen.
+
+#### Specific controller inside Storyboard
+
+This approach allows you to register any controller inside a given storyboard file.
+
+You will need:
+
+* An unique key for the screens dictionary on *Nemo*
+* The ViewController name
+* The Storyboard name file which containts the controller.
+
+**Example:**
+
+```swift
+let loginScreen = Screen(
+    "LoginViewController",
+    "LoginViewController",
+    "Login"
+)
+```
+
+#### Convention over configuration
+
+Image you have a `LoginViewController` identifier for a ViewController inside your `Login.storyboard` file. In order to add this controller reference to Nemo you should to the following:
+
+```swift
+let loginScreen = Screen(named: "Login")
+```
+
+In this case, *Nemo* assumes that the given *Login* name is the name of the Storyboard which contains a ViewController with a name using a **nomenclature** as follows:
+
+> *UIViewController* name = *Storyboard* name + "ViewController"
+
+So when you create a `Screen` instance with this approach, what *Nemo* does under the hood is using the previous *nomenclature* and calling the first approach *constructor* method as follows:
+
+```swift
+let loginScreen = Screen(
+    "LoginViewController",
+    "LoginViewController",
+    "Login"
+)
+```
+
+#### Setup your AppDelegate
+
 ```swift
 extension AppDelegate {
     internal func buildNautilus() {
@@ -90,7 +140,7 @@ extension NemoKeys {
 }
 ```
 
-### 2. Call setup method inside your `didFinishLaunchingWithOptions`
+### 3. Call setup method inside your `didFinishLaunchingWithOptions`
 
 ```swift
 @UIApplicationMain
