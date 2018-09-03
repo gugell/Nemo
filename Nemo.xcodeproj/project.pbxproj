@@ -8,20 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		A0E39C7D213DAA4F00012325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39C7C213DAA4F00012325 /* AppDelegate.swift */; };
-		A0E39C7F213DAA4F00012325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39C7E213DAA4F00012325 /* ViewController.swift */; };
-		A0E39C82213DAA4F00012325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E39C80213DAA4F00012325 /* Main.storyboard */; };
 		A0E39C84213DAA5100012325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E39C83213DAA5100012325 /* Assets.xcassets */; };
 		A0E39C87213DAA5100012325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E39C85213DAA5100012325 /* LaunchScreen.storyboard */; };
+		A0E39C92213DAC8F00012325 /* Nemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39C90213DAC8F00012325 /* Nemo.swift */; };
+		A0E39C93213DAC8F00012325 /* Nemo+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39C91213DAC8F00012325 /* Nemo+Transitions.swift */; };
+		A0E39CAA213DAD9F00012325 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E39C98213DAD9E00012325 /* Login.storyboard */; };
+		A0E39CAB213DAD9F00012325 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39C99213DAD9E00012325 /* LoginViewController.swift */; };
+		A0E39CAC213DAD9F00012325 /* Error.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E39C9B213DAD9E00012325 /* Error.storyboard */; };
+		A0E39CAD213DAD9F00012325 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39C9C213DAD9E00012325 /* ErrorViewController.swift */; };
+		A0E39CAE213DAD9F00012325 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39C9E213DAD9F00012325 /* MainViewController.swift */; };
+		A0E39CAF213DAD9F00012325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E39C9F213DAD9F00012325 /* Main.storyboard */; };
+		A0E39CB0213DAD9F00012325 /* DispatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39CA1213DAD9F00012325 /* DispatchViewController.swift */; };
+		A0E39CB1213DAD9F00012325 /* Dispatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E39CA2213DAD9F00012325 /* Dispatch.storyboard */; };
+		A0E39CB2213DAD9F00012325 /* DispatchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39CA3213DAD9F00012325 /* DispatchPresenter.swift */; };
+		A0E39CB3213DAD9F00012325 /* DispatchContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39CA4213DAD9F00012325 /* DispatchContract.swift */; };
+		A0E39CB4213DAD9F00012325 /* SessionFlowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39CA6213DAD9F00012325 /* SessionFlowHandler.swift */; };
+		A0E39CB5213DAD9F00012325 /* FetchUserFlowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39CA7213DAD9F00012325 /* FetchUserFlowHandler.swift */; };
+		A0E39CB6213DAD9F00012325 /* FlowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39CA8213DAD9F00012325 /* FlowHandler.swift */; };
+		A0E39CB7213DAD9F00012325 /* ValidSessionFlowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39CA9213DAD9F00012325 /* ValidSessionFlowHandler.swift */; };
+		A0E39CBA213DADEF00012325 /* DataFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E39CB9213DADEE00012325 /* DataFaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A0E39C79213DAA4F00012325 /* Nemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E39C7C213DAA4F00012325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0E39C7E213DAA4F00012325 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A0E39C81213DAA4F00012325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0E39C83213DAA5100012325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0E39C86213DAA5100012325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0E39C88213DAA5100012325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0E39C90213DAC8F00012325 /* Nemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nemo.swift; sourceTree = "<group>"; };
+		A0E39C91213DAC8F00012325 /* Nemo+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nemo+Transitions.swift"; sourceTree = "<group>"; };
+		A0E39C98213DAD9E00012325 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A0E39C99213DAD9E00012325 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A0E39C9B213DAD9E00012325 /* Error.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Error.storyboard; sourceTree = "<group>"; };
+		A0E39C9C213DAD9E00012325 /* ErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		A0E39C9E213DAD9F00012325 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A0E39C9F213DAD9F00012325 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A0E39CA1213DAD9F00012325 /* DispatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchViewController.swift; sourceTree = "<group>"; };
+		A0E39CA2213DAD9F00012325 /* Dispatch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dispatch.storyboard; sourceTree = "<group>"; };
+		A0E39CA3213DAD9F00012325 /* DispatchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchPresenter.swift; sourceTree = "<group>"; };
+		A0E39CA4213DAD9F00012325 /* DispatchContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchContract.swift; sourceTree = "<group>"; };
+		A0E39CA6213DAD9F00012325 /* SessionFlowHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionFlowHandler.swift; sourceTree = "<group>"; };
+		A0E39CA7213DAD9F00012325 /* FetchUserFlowHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchUserFlowHandler.swift; sourceTree = "<group>"; };
+		A0E39CA8213DAD9F00012325 /* FlowHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowHandler.swift; sourceTree = "<group>"; };
+		A0E39CA9213DAD9F00012325 /* ValidSessionFlowHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidSessionFlowHandler.swift; sourceTree = "<group>"; };
+		A0E39CB9213DADEE00012325 /* DataFaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +84,109 @@
 		A0E39C7B213DAA4F00012325 /* Nemo */ = {
 			isa = PBXGroup;
 			children = (
+				A0E39CB8213DADEE00012325 /* Utils */,
+				A0E39C8E213DAC8F00012325 /* Common */,
+				A0E39C94213DACA400012325 /* Presentation */,
 				A0E39C7C213DAA4F00012325 /* AppDelegate.swift */,
-				A0E39C7E213DAA4F00012325 /* ViewController.swift */,
-				A0E39C80213DAA4F00012325 /* Main.storyboard */,
 				A0E39C83213DAA5100012325 /* Assets.xcassets */,
 				A0E39C85213DAA5100012325 /* LaunchScreen.storyboard */,
 				A0E39C88213DAA5100012325 /* Info.plist */,
 			);
 			path = Nemo;
+			sourceTree = "<group>";
+		};
+		A0E39C8E213DAC8F00012325 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A0E39CBB213DAEEA00012325 /* Legato */,
+				A0E39C8F213DAC8F00012325 /* Navigation */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A0E39C8F213DAC8F00012325 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A0E39C90213DAC8F00012325 /* Nemo.swift */,
+				A0E39C91213DAC8F00012325 /* Nemo+Transitions.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		A0E39C94213DACA400012325 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A0E39CA0213DAD9F00012325 /* Dispatch */,
+				A0E39C9A213DAD9E00012325 /* Error */,
+				A0E39C97213DAD9E00012325 /* Login */,
+				A0E39C9D213DAD9E00012325 /* Main */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A0E39C97213DAD9E00012325 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A0E39C98213DAD9E00012325 /* Login.storyboard */,
+				A0E39C99213DAD9E00012325 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A0E39C9A213DAD9E00012325 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				A0E39C9B213DAD9E00012325 /* Error.storyboard */,
+				A0E39C9C213DAD9E00012325 /* ErrorViewController.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		A0E39C9D213DAD9E00012325 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A0E39C9F213DAD9F00012325 /* Main.storyboard */,
+				A0E39C9E213DAD9F00012325 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A0E39CA0213DAD9F00012325 /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				A0E39CA5213DAD9F00012325 /* Handlers */,
+				A0E39CA2213DAD9F00012325 /* Dispatch.storyboard */,
+				A0E39CA1213DAD9F00012325 /* DispatchViewController.swift */,
+				A0E39CA4213DAD9F00012325 /* DispatchContract.swift */,
+				A0E39CA3213DAD9F00012325 /* DispatchPresenter.swift */,
+			);
+			path = Dispatch;
+			sourceTree = "<group>";
+		};
+		A0E39CA5213DAD9F00012325 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				A0E39CA6213DAD9F00012325 /* SessionFlowHandler.swift */,
+				A0E39CA7213DAD9F00012325 /* FetchUserFlowHandler.swift */,
+				A0E39CA9213DAD9F00012325 /* ValidSessionFlowHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		A0E39CB8213DADEE00012325 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0E39CB9213DADEE00012325 /* DataFaker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A0E39CBB213DAEEA00012325 /* Legato */ = {
+			isa = PBXGroup;
+			children = (
+				A0E39CA8213DAD9F00012325 /* FlowHandler.swift */,
+			);
+			path = Legato;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +248,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0E39C87213DAA5100012325 /* LaunchScreen.storyboard in Resources */,
+				A0E39CAF213DAD9F00012325 /* Main.storyboard in Resources */,
+				A0E39CAC213DAD9F00012325 /* Error.storyboard in Resources */,
 				A0E39C84213DAA5100012325 /* Assets.xcassets in Resources */,
-				A0E39C82213DAA4F00012325 /* Main.storyboard in Resources */,
+				A0E39CB1213DAD9F00012325 /* Dispatch.storyboard in Resources */,
+				A0E39CAA213DAD9F00012325 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +263,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0E39C7F213DAA4F00012325 /* ViewController.swift in Sources */,
+				A0E39CB5213DAD9F00012325 /* FetchUserFlowHandler.swift in Sources */,
+				A0E39CAB213DAD9F00012325 /* LoginViewController.swift in Sources */,
+				A0E39C93213DAC8F00012325 /* Nemo+Transitions.swift in Sources */,
+				A0E39CB2213DAD9F00012325 /* DispatchPresenter.swift in Sources */,
+				A0E39CAD213DAD9F00012325 /* ErrorViewController.swift in Sources */,
+				A0E39CAE213DAD9F00012325 /* MainViewController.swift in Sources */,
+				A0E39C92213DAC8F00012325 /* Nemo.swift in Sources */,
 				A0E39C7D213DAA4F00012325 /* AppDelegate.swift in Sources */,
+				A0E39CB0213DAD9F00012325 /* DispatchViewController.swift in Sources */,
+				A0E39CB7213DAD9F00012325 /* ValidSessionFlowHandler.swift in Sources */,
+				A0E39CB3213DAD9F00012325 /* DispatchContract.swift in Sources */,
+				A0E39CBA213DADEF00012325 /* DataFaker.swift in Sources */,
+				A0E39CB6213DAD9F00012325 /* FlowHandler.swift in Sources */,
+				A0E39CB4213DAD9F00012325 /* SessionFlowHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A0E39C80213DAA4F00012325 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0E39C81213DAA4F00012325 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A0E39C85213DAA5100012325 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
