@@ -8,26 +8,51 @@
 
 import UIKit
 
-class DispatchViewController: UIViewController, DispatchView {    
+class DispatchViewController: UIViewController, DispatchView {
+    
+    //MARK: - Outlets
+    
+    @IBOutlet weak var mainAction: UIButton!
+    
+    //MARK: - Attributes
+    
     var presenter: DispatchViewPresenter!
+    
+    //MARK: - Controller
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
         presenter = DispatchPresenter(view: self)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    //MARK: - Actions
+    
+    @IBAction func didTapDispatch(_ sender: UIButton) {
+        sender.isUserInteractionEnabled = false
         presenter.decideUserMainScreen()
     }
+    
+    @IBAction func didChangeLoggedIn(_ sender: UISwitch) {
+        SessionFaker.value = sender.isOn
+    }
+    
+    @IBAction func didChangeValidToken(_ sender: UISwitch) {
+        ValidSessionFaker.value = sender.isOn
+    }
+    
+    @IBAction func didChangeModelAttribute(_ sender: UISwitch) {
+        UserFaker.value = sender.isOn
+    }
+    
+    //MARK: - View
     
     func reload() {
         presenter.decideUserMainScreen()
     }
     
     func setProgress(active: Bool) {
-        debugPrint("Progress is active: \(active)")
+        mainAction.alpha = active ? 0.4 : 1
+        mainAction.setTitle(active ? "LOADING..." : "Dispatch!", for: .normal)
     }
     
     func sendToMain() {

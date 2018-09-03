@@ -167,8 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				A0E39CA6213DAD9F00012325 /* SessionFlowHandler.swift */,
-				A0E39CA7213DAD9F00012325 /* FetchUserFlowHandler.swift */,
 				A0E39CA9213DAD9F00012325 /* ValidSessionFlowHandler.swift */,
+				A0E39CA7213DAD9F00012325 /* FetchUserFlowHandler.swift */,
 			);
 			path = Handlers;
 			sourceTree = "<group>";

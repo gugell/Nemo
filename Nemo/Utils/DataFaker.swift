@@ -20,21 +20,27 @@ import Foundation
 
 /// 1st validation
 class SessionFaker {
+    static var value: Bool = true
+    
     func hasSessionStarted() -> Bool {
-        return true
+        return SessionFaker.value
     }
 }
 
 /// 2nd validation
 class ValidSessionFaker {
+    static var value: Bool = true
+    
     func hasValidSession() -> Bool {
-        return true
+        return ValidSessionFaker.value
     }
 }
 
 /// 3rd validation
 class UserFaker {
+    static var value: Bool = true
+    
     func userHasSomeValidProperty() -> Bool {
-        return true
+        return UserFaker.value
     }
 }

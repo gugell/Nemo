@@ -11,7 +11,7 @@ import Foundation
 class DispatchPresenter: DispatchViewPresenter {
     
     private var flowHandler: FlowHandler<NemoKeys>
-    private var currentFlow: NemoKeys = .login
+    private var currentFlow: NemoKeys = .main
     
     let view: DispatchView!
     
@@ -53,7 +53,7 @@ extension DispatchPresenter: FlowHandlerCallback {
     }
     
     func onEarlyExit(flow: Any) {
-        currentFlow = flow as! NemoKeys
+        currentFlow = flow as! NemoKeys    
         executeAfterDecideMainScreenAction();
     }
 }
