@@ -99,18 +99,18 @@
 			isa = PBXGroup;
 			children = (
 				A0E39CBB213DAEEA00012325 /* Legato */,
-				A0E39C8F213DAC8F00012325 /* Navigation */,
+				A0E39C8F213DAC8F00012325 /* Nemo */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		A0E39C8F213DAC8F00012325 /* Navigation */ = {
+		A0E39C8F213DAC8F00012325 /* Nemo */ = {
 			isa = PBXGroup;
 			children = (
 				A0E39C90213DAC8F00012325 /* Nemo.swift */,
 				A0E39C91213DAC8F00012325 /* Nemo+Transitions.swift */,
 			);
-			path = Navigation;
+			path = Nemo;
 			sourceTree = "<group>";
 		};
 		A0E39C94213DACA400012325 /* Presentation */ = {

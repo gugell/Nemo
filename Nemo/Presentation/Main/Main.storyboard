@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--LoginViewController-->
         <scene sceneID="0Mb-vc-QqF">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="Xpv-pb-McY" customClass="MainViewController" customModule="Legato" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" title="LoginViewController" id="Xpv-pb-McY" customClass="MainViewController" customModule="Nemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U6K-2l-OLI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
