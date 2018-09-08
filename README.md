@@ -82,23 +82,23 @@ This approach allows you to register any controller inside a given storyboard fi
 
 You will need:
 
-* An unique key for the screens dictionary on *Nemo*
-* The ViewController name
-* The Storyboard name file which containts the controller.
+* An `unique key` for the screens dictionary on *Nemo*
+* The `ViewController` name
+* The `Storyboard` name file which containts the controller.
 
 **Example:**
 
 ```swift
 let loginScreen = Screen(
-    "LoginViewController",
-    "LoginViewController",
-    "Login"
+    "MainViewController",
+    "MainViewController",
+    "Main"
 )
 ```
 
 #### Convention over configuration
 
-Image you have a `LoginViewController` identifier for a ViewController inside your `Login.storyboard` file. In order to add this controller reference to Nemo you should to the following:
+Image you have a `LoginViewController` identifier for a ViewController inside your `Login.storyboard` file. In order to add this controller reference to Nemo you should do the following:
 
 ```swift
 let loginScreen = Screen(named: "Login")
@@ -119,6 +119,12 @@ let loginScreen = Screen(
 ```
 
 #### Setup your AppDelegate
+
+*Nemo* provides the method `add` in order to register screens to it's *crew list*.
+
+**Note:** We recommend to use an extension approach to declarate your own custom *NemoKeys* and use the `Screen(named:)` constructor to reduce lines of code and complexity.
+
+The following code shows you how to declare a setup method and a few navigation screes by using custom *NemoKeys* as **unique identifiers** for *Nemo*:
 
 ```swift
 extension AppDelegate {
