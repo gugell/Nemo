@@ -84,8 +84,8 @@ open class Nemo {
 
 extension Nemo {
     internal class func shouldEmbedInNavigation(for screenKey: String) -> Bool {
-        let shouldEmbed = screens.contains { key, _ -> Bool in
-            return key == screenKey
+        let shouldEmbed = embed.contains { screen -> Bool in
+            return screen.key == screenKey
         }
         return shouldEmbed
     }
